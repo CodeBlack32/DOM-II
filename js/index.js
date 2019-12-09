@@ -37,15 +37,15 @@ mouseEnter.addEventListener('mouseenter', function() {
 });
 
 //first h4
-const mouseExit = document.querySelector('h4'); 
+const mouseExit = document.querySelector('.intro'); 
 mouseExit.addEventListener('mouseleave', function(prop) {
- mouseExit.style.fontSize = '80px';
+ mouseExit.style.backgroundColor = 'green';
 });
 
 //stop Propagation
-const divMouse = document.querySelector('h2'); 
-divMouse.addEventListener('mouseleave', function( prop ) {
- divMouse.style.fontSize = '80px';
+const clickChange = document.querySelector('p'); 
+clickChange.addEventListener('click', function( event ) {
+ click.style.fontSize = '80px';
  prop.stopPropagation();
 });
 
@@ -75,3 +75,6 @@ window.addEventListener('scroll', function() {
     console.log('You Scrolled!');
 });
 
+window.addEventListener('resize', function(){
+console.log('The Screen is Moving!');
+  });
